@@ -1,6 +1,5 @@
 package interfaces;
 
-import exceptions.Exceptions;
 import interfaces.Devices.*;
 
 import org.apache.logging.log4j.LogManager;
