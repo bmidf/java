@@ -1,8 +1,8 @@
 package exceptions;
 
 import exceptions.customExc.ExampleOfException;
-import exceptions.examples.AgeToEnterWebsite;
 import exceptions.examples.ArrayAddName;
+import exceptions.examples.Examples;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,12 +10,22 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String args[]){
         //ExampleOfException "checked"
-        AgeToEnterWebsite yourAge = new AgeToEnterWebsite();
+        //Integer exc
+        Examples yourAge = new Examples();
         try{
-            yourAge.enterWebsite(16);
+            yourAge.enterWebsite(13);
         } catch (ExampleOfException ex){
             logger.info("Exception occurred: " + ex);
         }
+        //String exc
+        Examples name = new Examples();
+        try{
+            name.yourName("Ben");
+            logger.info("Name has been added.");
+        } catch (ExampleOfException ex){
+            logger.info("Exception occurred: " + ex);
+        }
+
 
         //RuntimeExceptionEx "unchecked"
         ArrayAddName nameEx = new ArrayAddName();
