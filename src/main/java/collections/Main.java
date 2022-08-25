@@ -30,7 +30,6 @@ class Main {
         street.print();
 
 
-
          /*
         LinkedList<String> animals = new LinkedList<>();
         animals.add("Rabbit");

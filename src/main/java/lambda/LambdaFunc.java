@@ -32,5 +32,6 @@ public class LambdaFunc {
         //generic function 1
         IValue<Double> refIValue = () -> 3.14;
         logger.info("Lambda Generic 1: "+refIValue.GetValue());
+
     }
 }

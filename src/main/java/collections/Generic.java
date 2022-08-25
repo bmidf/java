@@ -14,7 +14,6 @@ class Generic <T, V> {
     public void print(){
         logger.info("Age: " + this.age + ", " + "Name: " + this.name);
     }
-
 }
 
 

@@ -16,4 +16,5 @@ public class Address <I, N>{
     public void print(){
         logger.info("Street id: " + this.streetId + ", " + "Street Name: " + this.streetName);
     }
+
 }

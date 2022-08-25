@@ -33,7 +33,7 @@ public class ReadText {
 
             logger.info("Text From File: " + write);
             logger.info("Number of Unique Words in File: " + uniqueWords.size());
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
