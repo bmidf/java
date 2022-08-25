@@ -20,6 +20,16 @@ class Main {
         studentList.remove(s1);
         logger.info("New Student List: " + studentList);
 
+        logger.info("==================Generic======================");
+
+        logger.info("Person:");
+        Generic<Integer, String> nick = new Generic<>(18, "Nick");
+        nick.print();
+        logger.info("Street:");
+        Address<Integer, String> street = new Address<>(54339839, "Freedom Ave.");
+        street.print();
+
+
 
          /*
         LinkedList<String> animals = new LinkedList<>();
@@ -38,4 +48,5 @@ class Main {
         logger.info("Updated animal list: " + animals);
         */
     }
+
 }

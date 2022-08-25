@@ -1,6 +1,10 @@
 package collections;
 
-public class Generic <T, V> {
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+class Generic <T, V> {
+    private static final Logger logger = LogManager.getLogger(Generic.class);
     T age;
     V name;
     public Generic(T age, V name) {
@@ -8,11 +12,7 @@ public class Generic <T, V> {
         this.name = name;
     }
     public void print(){
-        System.out.println("You live at: " + this.age + " " + this.name);
-    }
-    public static void main(String[] args) {
-        Generic<Integer, String> nick = new Generic<>(18, "Nick");
-        nick.print();
+        logger.info("Age: " + this.age + ", " + "Name: " + this.name);
     }
 
 }
