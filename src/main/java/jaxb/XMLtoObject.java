@@ -17,9 +17,10 @@ public class XMLtoObject {
             Unmarshaller unmarshall = jaxb.createUnmarshaller();
             Customer customer = (Customer) unmarshall.unmarshal(new File("src/main/resources/customer.xml"));
                 LOGGER.info(customer);
-                LOGGER.info("Customer Id : " + customer.getId());
-                LOGGER.info("Customer Age : " + customer.getAge());
-                LOGGER.info("Customer Name : " + customer.getName());
+                LOGGER.info("[Customer Id : " + customer.getId()+"Customer Age : "
+                        + customer.getAge()+"Customer Name : " + customer.getName()+"]");
+//                LOGGER.info("Customer Age : " + customer.getAge());
+//                LOGGER.info("Customer Name : " + customer.getName());
         } catch (JAXBException e) {
             e.printStackTrace();
         }
