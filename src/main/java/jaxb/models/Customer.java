@@ -1,4 +1,4 @@
-package jaxb;
+package jaxb.models;
 
 import jakarta.xml.bind.annotation.*;
 
@@ -13,7 +13,9 @@ public class Customer {
         this.id = id;
     }
     @XmlElement(name="name")
-    public String getName() {return name;}
+    public String getName() {
+        return name;
+    }
     public void setName(String name) {
         this.name = name;
     }

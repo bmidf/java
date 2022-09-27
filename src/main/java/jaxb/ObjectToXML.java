@@ -3,6 +3,8 @@ package jaxb;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
+import jaxb.models.Student;
+
 import java.io.File;
 
 public class ObjectToXML {
@@ -16,7 +18,7 @@ public class ObjectToXML {
             JAXBContext jaxb = JAXBContext.newInstance(Student.class);
             Marshaller marshaller = jaxb.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-            File xmlFile = new File("src/main/resources/file.xml");
+            File xmlFile = new File("src/main/resources/jaxb/JAXBstudent.xml");
             marshaller.marshal(student, xmlFile);
         } catch (JAXBException e) {
             e.printStackTrace();

@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ReadText {
-    private static final Logger logger = LogManager.getLogger(ReadText.class);
+    private static final Logger LOGGER = LogManager.getLogger(ReadText.class);
     public static void main(String[] args){
 
         Map<String, Integer> uniqueWords = new HashMap<>();
@@ -31,8 +31,8 @@ public class ReadText {
                 }
             }
 
-            logger.info("Text From File: " + write);
-            logger.info("Number of Unique Words in File: " + uniqueWords.size());
+            LOGGER.info("Text From File: " + write);
+            LOGGER.info("Number of Unique Words in File: " + uniqueWords.size());
         } catch (IOException e) {
             e.printStackTrace();
         }

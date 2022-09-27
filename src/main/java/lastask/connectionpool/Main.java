@@ -1,4 +1,4 @@
-package lastask.connectionPool;
+package lastask.connectionpool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

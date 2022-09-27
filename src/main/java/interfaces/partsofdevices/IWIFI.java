@@ -1,4 +1,4 @@
-package interfaces.PartsOfDevices;
+package interfaces.partsofdevices;
 
 public interface IWIFI {
     void usesWIFI();

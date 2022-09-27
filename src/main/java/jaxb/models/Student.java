@@ -1,4 +1,4 @@
-package jaxb;
+package jaxb.models;
 
 import jakarta.xml.bind.annotation.*;
 
@@ -10,16 +10,20 @@ public class Student {
     @XmlElement(name = "name")
     public String getFullName() {return name;}
     public void setName(String name) {
-        name = name;
+        this.name = name;
     }
     @XmlElement(name = "degree")
-    public String getDegree() {return degree;}
+    public String getDegree() {
+        return degree;
+    }
     public void setDegree(String degree) {
-        degree = degree;
+        this.degree = degree;
     }
     @XmlElement(name = "marks")
-    public String getMarks() {return marks;}
+    public String getMarks() {
+        return marks;
+    }
     public void setMarks(String marks) {
-        marks = marks;
+        this.marks = marks;
     }
 }

@@ -1,4 +1,4 @@
-package exceptions.customExc;
+package exceptions.customexc;
 
 public class ExampleOfException extends Exception{
     public ExampleOfException(String s){

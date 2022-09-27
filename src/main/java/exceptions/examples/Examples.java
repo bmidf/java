@@ -1,6 +1,6 @@
 package exceptions.examples;
 
-import exceptions.customExc.ExampleOfException;
+import exceptions.customexc.ExampleOfException;
 
 public class Examples {
     public void enterWebsite(int age) throws ExampleOfException {

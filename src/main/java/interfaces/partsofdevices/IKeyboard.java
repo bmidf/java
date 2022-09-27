@@ -1,4 +1,4 @@
-package interfaces.PartsOfDevices;
+package interfaces.partsofdevices;
 
 public interface IKeyboard {
     void usesKeyboard();

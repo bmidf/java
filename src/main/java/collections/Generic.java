@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 class Generic <T, V> {
-    private static final Logger logger = LogManager.getLogger(Generic.class);
+    private static final Logger LOGGER = LogManager.getLogger(Generic.class);
     T age;
     V name;
     public Generic(T age, V name) {
@@ -12,7 +12,7 @@ class Generic <T, V> {
         this.name = name;
     }
     public void print(){
-        logger.info("Age: " + this.age + ", " + "Name: " + this.name);
+        LOGGER.info("Age: " + this.age + ", " + "Name: " + this.name);
     }
 }
 

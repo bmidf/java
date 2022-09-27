@@ -1,4 +1,4 @@
-package exceptions.customExc;
+package exceptions.customexc;
 
 public class RuntimeExceptionEx extends RuntimeException {
     public RuntimeExceptionEx(String s) {

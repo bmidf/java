@@ -1,6 +1,6 @@
 package exceptions.examples;
 
-import exceptions.customExc.RuntimeExceptionEx;
+import exceptions.customexc.RuntimeExceptionEx;
 
 import java.util.ArrayList;
 import java.util.Arrays;
