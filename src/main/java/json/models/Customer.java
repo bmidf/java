@@ -33,9 +33,7 @@ public class Customer {
     public void setAge(int age) {
         this.age = age;
     }
-    Customer(){
 
-    }
     public Customer(int id, String name,  int age) {
         this.id = id;
         this.name = name;

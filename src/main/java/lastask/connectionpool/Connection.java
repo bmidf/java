@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 class Connection implements Runnable {
-    private String name;
+    private final String name;
     public Connection(String s) {
         name = s;
     }

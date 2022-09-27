@@ -6,7 +6,7 @@ enum Website {
     IG("https://instagram.com/"),
     YT("https://youtube.com/"),
     GG("https://google.com/");
-    private String url;
+    private final String url;
 
     Website(String envUrl) {
         this.url = envUrl;

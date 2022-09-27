@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
-    public static void main(String args[]){
+    public static void main(String[] args){
         //ExampleOfException "checked"
         //Integer exc
         Examples yourAge = new Examples();
@@ -33,8 +33,6 @@ public class Main {
         nameEx.addName("John");
 
         //just an example of exception
-        int a = 6;
-        int b = 0;
         try {
             int num = Integer.parseInt ("Number") ;
             LOGGER.info("" + num);

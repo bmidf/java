@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(RunnableStop.class);
-    public static void main(String args[]){
+    public static void main(String[] args){
         RunnableTest r1 = new RunnableTest();
         Thread th1 = new Thread(r1, "Runnable Thread");
         th1.start();

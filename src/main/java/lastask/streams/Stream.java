@@ -9,7 +9,7 @@ import static java.util.stream.Collectors.*;
 
 class Stream{
     private static final Logger LOGGER = LogManager.getLogger(Stream.class);
-    public static void main(String args[]){
+    public static void main(String[] args){
         List<String> strings = Arrays.asList("Mercury","Earth","Mars");
 
         //filter
@@ -19,7 +19,7 @@ class Stream{
         LOGGER.info("Planets that end with S: "+ends);
         //toUpperCase
         List<String> upper = strings.stream()
-                .map(value -> value.toUpperCase())
+                .map(String::toUpperCase)
                 .collect(toList());
         LOGGER.info("Planets in upper case: " + upper);
         //joining

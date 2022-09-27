@@ -12,7 +12,7 @@ import java.io.File;
 
 public class DOMXmlToObject {
     private static final Logger LOGGER = LogManager.getLogger(DOMXmlToObject.class);
-    public static void main(String argv[]) {
+    public static void main(String[] argv) {
         try {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();
